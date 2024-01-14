@@ -106,3 +106,43 @@ img {
 .card-button:hover {
   text-decoration: underline;
 }
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+  .card-data {
+    width: 250px;
+    padding: 1rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  .container {
+    height: 100vh;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card-img {
+    width: 348px;
+  }
+
+  .card-data {
+    width: 316px;
+    padding-inline: 2.5rem;
+  }
+}
